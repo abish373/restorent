@@ -62,7 +62,10 @@ export const ProductColumn = [
                   src={rowValue?.img}
                   alt={rowValue?.name}
                 />
-                <span>{rowValue.name}</span>
+                <div>
+                  <h3>{rowValue.name}</h3>
+                  <p>{rowValue.description}</p>
+                </div>
               </div>
             </div>
           </Modal>
