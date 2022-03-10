@@ -1,10 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: -10px;
+  background-color: #ececec;
+}
+.container-wrapper {
+  padding-top: 20px;
+  width: 50%;
+  margin: auto;
+}
+
 .name-price {
   display: flex;
+  justify-content: space-around;
 }
 .container {
-  width: 50%;
-  border: 1px solid rgb(209, 209, 209);
+  border: 1px solid rgb(224, 224, 224);
   margin: 10px auto;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 10px;
+  background-color: white;
+}
+.d-flex {
+  display: flex;
+}
+
+.item-image {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+.m-0 {
+  margin: 0;
+}
+.gap-20px {
+  gap: 20px;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.btn-primary {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  line-height: 1;
+  font-weight: 600;
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #fc6d22;
+  border-radius: 6px;
+  padding: 9px 20px;
+  background: #fc6d22;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  color: #fc6d22;
+  padding: 9px 23px;
+  line-height: 1;
+  background: transparent;
+  border: 2px solid #fc6d22;
+  border-radius: 6px;
+}
+.bg {
+  background-color: #ececec;
+}
+.search-bar {
+  border: 1px solid #ececec;
+  width: 50%;
+  margin-left: 23%;
+  height: 30px;
+  border-radius: 20px;
+  padding: 0px 25px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ececec;
+  background: white;
+  margin-top: 30px;
+}
+
+.table th {
+  border: 1px solid #ececec;
+  padding: 10px;
+  /* background: #ececec; */
+}
+
+.name-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.text-hidden {
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.overlay {
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.modal-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 50%;
+  height: 50%;
 }
