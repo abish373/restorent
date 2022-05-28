@@ -6,6 +6,8 @@ function App() {
   return (
     <div className="bg">
       <Products />
+      <div>hello beautiful world</div>
+      <div>hello world</div>
     </div>
   );
 }
